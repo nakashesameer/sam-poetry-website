@@ -1,0 +1,505 @@
+/* Marathi Poetry Website - Traditional Paper Theme */
+
+/* Import Marathi-friendly fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+:root {
+    --paper-bg: #f5f0e6;
+    --paper-darker: #e8e0d0;
+    --text-dark: #2c2416;
+    --text-medium: #5c4d3a;
+    --accent: #8b6914;
+    --border: #d4c4a8;
+    --shadow: rgba(44, 36, 22, 0.15);
+    --font-marathi: 'Shrikhand', cursive;
+    --font-english: Georgia, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shrikhand', 'Noto Sans Devanagari', cursive;
+    background: linear-gradient(135deg, #d4c4a8 0%, #c9b896 100%);
+    min-height: 100vh;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* Copy Protection */
+.protected-text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Book Container */
+.book-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page {
+    background: var(--paper-bg);
+    padding: 60px 70px;
+    box-shadow:
+        0 0 5px var(--shadow),
+        0 0 20px var(--shadow),
+        inset 0 0 50px rgba(139, 105, 20, 0.03);
+    border-radius: 3px;
+    position: relative;
+    min-height: 600px;
+}
+
+/* Page edge effect */
+.page::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(90deg, var(--paper-darker), var(--paper-bg));
+    border-radius: 3px 0 0 3px;
+}
+
+/* Header */
+.site-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--border);
+}
+
+.site-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.site-subtitle {
+    font-family: var(--font-english);
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    font-style: italic;
+}
+
+/* Poem List (Index Page) */
+.poem-list {
+    list-style: none;
+}
+
+.poem-list-item {
+    padding: 20px 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.poem-list-item:last-child {
+    border-bottom: none;
+}
+
+.poem-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.poem-link:hover {
+    color: var(--accent);
+    padding-left: 10px;
+}
+
+.poem-link-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.poem-link-title .title-mr {
+    font-family: var(--font-marathi);
+}
+
+.poem-link-title .title-en {
+    font-family: var(--font-english);
+    font-style: italic;
+}
+
+.poem-link-title .title-separator {
+    font-family: var(--font-english);
+    color: var(--text-medium);
+}
+
+.poem-link-date {
+    font-family: var(--font-english);
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+/* Poem Page Styles */
+.poem-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.poem-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.poem-title-en {
+    font-family: var(--font-english);
+    font-size: 1.3rem;
+    color: var(--text-medium);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.poem-date {
+    font-family: var(--font-english);
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    font-style: italic;
+}
+
+/* Poem Content */
+.poem-content {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.25rem;
+    line-height: 2.2;
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px 20px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.poem-line {
+    margin-bottom: 8px;
+}
+
+.stanza {
+    margin-bottom: 25px;
+}
+
+/* Notes Section */
+.poem-notes {
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(139, 105, 20, 0.05);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 5px 5px 0;
+}
+
+.poem-notes.notes-en {
+    margin-top: 20px;
+    font-family: var(--font-english);
+}
+
+.poem-notes.notes-en .notes-content {
+    font-style: italic;
+}
+
+.notes-title {
+    font-family: var(--font-english);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.notes-content {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.8;
+}
+
+/* English Translation */
+.translation-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(44, 36, 22, 0.03);
+    border-radius: 5px;
+}
+
+.translation-title {
+    font-family: var(--font-english);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-medium);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.translation-content {
+    font-family: var(--font-english);
+    font-size: 1.05rem;
+    color: var(--text-medium);
+    line-height: 2;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Top Navigation */
+.nav-top {
+    margin-bottom: 30px;
+}
+
+.nav-top .nav-link {
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.nav-link {
+    font-family: var(--font-english);
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link:hover {
+    color: var(--text-dark);
+}
+
+.nav-link.home {
+    margin: 0 auto;
+}
+
+/* Site Navigation (About/Contact) */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    font-family: var(--font-english);
+}
+
+.nav-separator {
+    color: var(--border);
+}
+
+/* Footer */
+.site-footer {
+    font-family: var(--font-english);
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+/* Decorative Elements */
+.decorative-divider {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.decorative-divider img {
+    height: 40px;
+    width: auto;
+    opacity: 0.85;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: block;
+    margin: 15px auto 10px;
+    height: 50px;
+    width: auto;
+    opacity: 0.9;
+}
+
+/* About Page */
+.about-content {
+    padding: 20px 0;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section.about-en {
+    font-family: var(--font-english);
+}
+
+.section-title {
+    font-family: var(--font-marathi);
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-section.about-en .section-title {
+    font-family: var(--font-english);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-dark);
+}
+
+.artist-photo {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+/* Contact Page */
+.contact-content {
+    padding: 20px 0;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.contact-intro em {
+    font-family: var(--font-english);
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-english);
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: var(--font-english);
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-dark);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 5px rgba(139, 105, 20, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    font-family: var(--font-english);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: var(--accent);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: var(--text-dark);
+    transform: translateY(-2px);
+}
+
+.form-note {
+    margin-top: 25px;
+    text-align: center;
+    font-family: var(--font-english);
+    font-size: 0.85rem;
+    color: var(--text-medium);
+}
+
+.form-note a {
+    color: var(--accent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-container {
+        margin: 20px 15px;
+        padding: 10px;
+    }
+
+    .page {
+        padding: 40px 30px;
+    }
+
+    .page::before {
+        width: 15px;
+    }
+
+    .site-title {
+        font-size: 1.8rem;
+    }
+
+    .poem-title {
+        font-size: 1.5rem;
+    }
+
+    .poem-content {
+        font-size: 1.1rem;
+        padding: 20px 10px;
+    }
+}
+
+/* Print styles - also protected */
+@media print {
+    body {
+        display: none !important;
+    }
+}

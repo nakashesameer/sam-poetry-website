@@ -1,0 +1,28 @@
+येथे तुमच्या कवितेची पहिली ओळ
+येथे तुमच्या कवितेची दुसरी ओळ
+येथे तुमच्या कवितेची तिसरी ओळ
+येथे तुमच्या कवितेची चौथी ओळ
+
+दुसऱ्या कडव्याची पहिली ओळ
+दुसऱ्या कडव्याची दुसरी ओळ
+दुसऱ्या कडव्याची तिसरी ओळ
+दुसऱ्या कडव्याची चौथी ओळ
+
+---notes-mr---
+येथे तुम्ही कवितेबद्दल तुमचे विचार, प्रेरणा, किंवा इतर टिपा लिहू शकता.
+ही कविता कशी लिहिली गेली, कोणत्या प्रसंगी, कोणत्या भावनेतून - असे सर्व येथे लिहा.
+
+---notes-en---
+Here you can write your thoughts about the poem, your inspiration, or other notes.
+Describe how the poem was written, on what occasion, from what emotions - write all of that here.
+
+---translation---
+Here is the first line of your poem
+Here is the second line of your poem
+Here is the third line of your poem
+Here is the fourth line of your poem
+
+Second stanza first line
+Second stanza second line
+Second stanza third line
+Second stanza fourth line

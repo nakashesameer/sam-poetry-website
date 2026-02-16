@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - संपर्क">
+    <title>Contact | कविता संग्रह</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="page">
+            <!-- Top Navigation -->
+            <nav class="nav-top">
+                <a href="index.html" class="nav-link">← मुख्यपृष्ठ | Home</a>
+            </nav>
+
+            <!-- Page Header -->
+            <header class="poem-header">
+                <h1 class="poem-title protected-text">संपर्क</h1>
+                <p class="poem-title-en protected-text">Contact</p>
+            </header>
+
+            <main>
+                <div class="contact-content">
+                    <p class="contact-intro">
+                        तुमचे विचार, अभिप्राय किंवा प्रश्न शेअर करा.<br>
+                        <em>Share your thoughts, feedback, or questions.</em>
+                    </p>
+
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">नाव / Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">ईमेल / Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">संदेश / Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">पाठवा / Send</button>
+                    </form>
+
+                    <p class="form-note">
+                        <em>Note: To enable the contact form, sign up at <a href="https://formspree.io" target="_blank">Formspree</a> and replace YOUR_FORM_ID in the form action.</em>
+                    </p>
+                </div>
+            </main>
+
+            <div class="decorative-divider">
+                <img src="images/PSI.png" alt="decorative divider">
+            </div>
+
+            <!-- Site Navigation -->
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <span class="nav-separator">|</span>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+
+            <footer class="site-footer protected-text">
+                <img src="images/STYN.png" alt="logo" class="footer-logo">
+                <p>© २०२६ सर्व हक्क राखीव | All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

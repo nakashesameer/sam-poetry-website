@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marathi Poem">
+    <title>कविता संग्रह</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="page">
+            <!-- Top Navigation -->
+            <nav class="nav-top">
+                <a href="index.html" class="nav-link">← मुख्यपृष्ठ | Home</a>
+            </nav>
+
+            <!-- Poem Header -->
+            <header class="poem-header">
+                <h1 class="poem-title protected-text" id="poemTitle">Loading...</h1>
+                <p class="poem-title-en protected-text" id="poemTitleEn"></p>
+                <p class="poem-date protected-text" id="poemDate"></p>
+            </header>
+
+            <main>
+                <!-- Poem Content -->
+                <div class="poem-content protected-text" id="poemContent">
+                </div>
+
+                <!-- Marathi Notes Section (hidden by default) -->
+                <div class="poem-notes" id="notesMrSection" style="display: none;">
+                    <h2 class="notes-title">कवितेबद्दल</h2>
+                    <p class="notes-content protected-text" id="notesMrContent"></p>
+                </div>
+
+                <!-- English Notes Section (hidden by default) -->
+                <div class="poem-notes notes-en" id="notesEnSection" style="display: none;">
+                    <h2 class="notes-title">About This Poem</h2>
+                    <p class="notes-content protected-text" id="notesEnContent"></p>
+                </div>
+
+                <!-- English Translation (hidden by default) -->
+                <div class="translation-section" id="translationSection" style="display: none;">
+                    <h2 class="translation-title">English Translation</h2>
+                    <div class="translation-content protected-text" id="translationContent"></div>
+                </div>
+            </main>
+
+            <div class="decorative-divider">
+                <img src="images/PSI.png" alt="decorative divider">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link home">← मुख्यपृष्ठ | Home</a>
+            </nav>
+
+            <footer class="site-footer protected-text">
+                <img src="images/STYN.png" alt="logo" class="footer-logo">
+                <p>© २०२६ सर्व हक्क राखीव | All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/poem-loader.js"></script>
+</body>
+</html>
