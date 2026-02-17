@@ -22,35 +22,29 @@
             </header>
 
             <main>
-                <div class="contact-content">
-                    <p class="contact-intro">
+                <!-- Comments Section -->
+                <section class="comments-section" id="comments-section">
+                    <p class="comments-intro">
                         तुमचे विचार, अभिप्राय किंवा प्रश्न शेअर करा.<br>
                         <em>Share your thoughts, feedback, or questions.</em>
                     </p>
 
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <form class="comment-form" id="comment-form">
                         <div class="form-group">
-                            <label for="name">नाव / Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="comment-name">नाव / Name</label>
+                            <input type="text" id="comment-name" name="name" required maxlength="100">
                         </div>
-
                         <div class="form-group">
-                            <label for="email">ईमेल / Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="comment-message">संदेश / Message</label>
+                            <textarea id="comment-message" name="message" rows="4" required maxlength="1000"></textarea>
                         </div>
-
-                        <div class="form-group">
-                            <label for="message">संदेश / Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">पाठवा / Send</button>
+                        <button type="submit" class="submit-btn">पाठवा / Post Comment</button>
                     </form>
 
-                    <p class="form-note">
-                        <em>Note: To enable the contact form, sign up at <a href="https://formspree.io" target="_blank">Formspree</a> and replace YOUR_FORM_ID in the form action.</em>
-                    </p>
-                </div>
+                    <div class="comments-list" id="comments-list">
+                        <p class="loading-comments">Loading comments...</p>
+                    </div>
+                </section>
             </main>
 
             <div class="decorative-divider">
@@ -72,5 +66,10 @@
     </div>
 
     <script src="js/script.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <!-- Comments functionality -->
+    <script src="js/comments.js"></script>
 </body>
 </html>

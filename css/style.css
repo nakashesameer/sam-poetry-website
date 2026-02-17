@@ -497,6 +497,103 @@ body {
     }
 }
 
+/* Comments Section */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.comments-intro em {
+    font-family: var(--font-english);
+}
+
+.comment-form {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    background: rgba(139, 105, 20, 0.05);
+    border-radius: 5px;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-family: var(--font-english);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.comment-date {
+    font-family: var(--font-english);
+    font-size: 0.8rem;
+    color: var(--text-medium);
+}
+
+.comment-text {
+    font-family: var(--font-english);
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.loading-comments,
+.no-comments,
+.error-message {
+    text-align: center;
+    font-family: var(--font-english);
+    color: var(--text-medium);
+    padding: 30px;
+    font-style: italic;
+}
+
+.error-message {
+    color: #721c24;
+}
+
+.form-feedback {
+    margin-top: 15px;
+    padding: 12px;
+    font-family: var(--font-english);
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-feedback-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.form-feedback-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
 /* Print styles - also protected */
 @media print {
     body {
